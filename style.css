@@ -63,3 +63,27 @@ a {
 a:hover {
   color: var(--color-tertiary);
 }
+
+/* ========== Header Section ========== */
+
+section {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  color: var(--color-light);
+  position: relative;
+  top: 3rem;
+}
+
+section .container h1 {
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+section .container h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
