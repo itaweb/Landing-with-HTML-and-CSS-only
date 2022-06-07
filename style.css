@@ -42,3 +42,24 @@ nav .container {
 nav .container img {
   width: 3.2rem;
 }
+
+nav .container #showNav,
+nav .container #toggleNav {
+  display: none;
+}
+
+nav .container ul {
+  display: flex;
+  gap: 4rem;
+}
+
+a {
+  color: var(--color-light);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 300ms ease;
+}
+
+a:hover {
+  color: var(--color-tertiary);
+}
