@@ -17,7 +17,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: var(--color-secondary);
+  background: url("/images/background.jpg") no-repeat center center/cover;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -37,6 +37,7 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 0;
 }
 
 nav .container img {
@@ -139,8 +140,23 @@ section .container a::before {
 
 section .container a:hover {
   background: linear-gradient(
-    to right,
+    to left,
     var(--color-secondary),
     var(--color-primary)
   );
+}
+
+/*========== Медиа запросы для телефонов =================== */
+
+@media screen and (max-width: 700px) {
+  /* Навигация */
+  nav .container {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-secondary);
+  }
+
+  nav img {
+    margin-left: 1rem;
+  }
 }
